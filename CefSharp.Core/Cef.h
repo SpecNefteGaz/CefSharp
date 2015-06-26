@@ -160,7 +160,7 @@ namespace CefSharp
 
                 if(performDependencyCheck)
                 {
-                    DependencyChecker::AssertAllDependenciesPresent(cefSettings->Locale, cefSettings->LocalesDirPath, cefSettings->ResourcesDirPath, cefSettings->PackLoadingDisabled, cefSettings->BrowserSubprocessPath);
+                   // DependencyChecker::AssertAllDependenciesPresent(cefSettings->Locale, cefSettings->LocalesDirPath, cefSettings->ResourcesDirPath, cefSettings->PackLoadingDisabled, cefSettings->BrowserSubprocessPath);
                 }
 
                 UIThreadTaskFactory = gcnew TaskFactory(gcnew CefTaskScheduler(TID_UI));

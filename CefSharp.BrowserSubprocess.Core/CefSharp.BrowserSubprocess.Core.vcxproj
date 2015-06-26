@@ -72,19 +72,23 @@
     <LinkIncremental>true</LinkIncremental>
     <LinkKeyFile>..\CefSharp.snk</LinkKeyFile>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\CefSharp.Core\x86\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <LinkKeyFile>..\CefSharp.snk</LinkKeyFile>
     <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\CefSharp.Core\$(Platform)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <LinkKeyFile>..\CefSharp.snk</LinkKeyFile>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\CefSharp.Core\x86\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <LinkKeyFile>..\CefSharp.snk</LinkKeyFile>
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\CefSharp.Core\$(Platform)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
